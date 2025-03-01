@@ -39,4 +39,8 @@ In this project, the reason I chose this model to classify our data are:
 2. My dataset is medical images, it is high resolution images. I need high feature extracting power for this project. Compound Scaling could extract detail features in high resolution images.
  
 3. This dataset is unbalanced dataset, the performance is better with EfficientNet in unbalanced dataset.
+
+## Process
+
+classified images by types manually -> feature engineering one, enhance the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhance contrast ratio of images -> compute weights of unbalanced dataset for computation of loss -> set loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculate mean and std of dataset for data loading -> data loading ->set class for features learning enhancing(in this project, ) -> 
    
