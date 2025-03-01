@@ -32,4 +32,11 @@ In the graph, we could see the main stem of the architecture of EfficienNet is d
 
 SE block is a sophisticated mechanism designed to enhance the network’s ability to focus on the most informative features in the feature maps. This process significantly improves the representational power of the model
 
-In 
+In this project, the reason I chose this model to classify our data are:
+
+1. I implemented this project on my laptop, My computational resources is limited. EfficienNet could achieve better performance in limited computational environment.
+
+2. My dataset is medical images, it is high resolution images. I need high feature extracting power for this project. Compound Scaling could extract detail features in high resolution images.
+ 
+3. This dataset is unbalanced dataset, the performance is better with EfficientNet in unbalanced dataset.
+   
