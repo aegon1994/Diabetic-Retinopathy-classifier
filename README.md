@@ -23,4 +23,4 @@ I implemented this project by efficienNet, I will introduce this model below.
 My CPU is intel-i7-11th, GPU is NVIDIA GeForce RTX 3060, Size of memory is 40GB.
 
 ## model 
-In this time, I implemented this project by efficienNet. EfficienNet
+In this time, I implemented this project by efficienNet. EfficienNet is a high efficiency CNN model. Here is the architecture of EfficienNet<img src="https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s1600/image2.png">
