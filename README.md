@@ -44,5 +44,10 @@ In this project, the reason I chose this model to classify our data are:
 
 classified images by types manually -> feature engineering one, enhanced the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhanced contrast ratio of images -> computed weights of unbalanced dataset for computation of loss -> seted loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculated mean and std of dataset for data loading -> data loading ->seted class for features learning enhancing(in this project, I chose mixup and cutmix) -> trained efficientnet model with k-fold -> saved weight of model and predicted the result.
 
-### 
+### data labeling
+In this project, there are three types called 0,1,2. I introduced Pytorch could label datas auto by address when it loaded datas. The only thing I needed to do was classify training data to correct subfolder. I classified data manually because data is not too many.
+
+### feature engineering
+
+
    
