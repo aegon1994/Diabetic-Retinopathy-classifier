@@ -28,4 +28,8 @@ In this time, I implemented this project by efficienNet. EfficienNet is a high e
 The feature of efficienNet is it will find the basic CNN network architecture with Neural Architecture Search (NAS) and set Depth, Width and resolution by Compound Scaling at same time.
 That is why EfficientNet outperforms other CNN architectures by achieving higher accuracy while requiring relatively fewer computational resources.
 
-In the graph, we could see the main stem of the architecture of EfficienNet is different size MBConv layers. MBConv including depthwise separable convolution and an SE (Squeeze-and-Excitation) block could help to extract features in key area. Depthwise separable convolution in MBConv could 
+In the graph, we could see the main stem of the architecture of EfficienNet is different size MBConv layers. MBConv including depthwise separable convolution and an SE (Squeeze-and-Excitation) block could help to extract features in key area. Depthwise separable convolution in MBConv could capture local detail features, it is more efficient than other CNNs in computational environment.
+
+SE block is a sophisticated mechanism designed to enhance the network’s ability to focus on the most informative features in the feature maps. This process significantly improves the representational power of the model
+
+In 
