@@ -11,7 +11,8 @@ If you want to rebuilt this project or implemented this model, I have recommende
 
 ### dataset and labels
 The dataset was provided by [Eric Li](https://www.kaggle.com/taipingeric), the host of this competition.
+Those datas is the medical images of eyeballs in Diabetic-Retinopathy and there are 2526 imnages in training dataset, and 522 images in testing data. There are three types in training datas, They are 0:1215, 1:560, 2:311.
 
 This project was developed in Pytorch, so I didn't need to built labels of datas. In Pytorch, ImageFolder would produce labels according to the order of Sub-folders in the folder which is the location of your datas when it loaded the dataset.
 
-
+Luckily, our type names of dataset is the numbers which order is from 0 to 2 and our datas is not too many, it means I could classify training datas manually
