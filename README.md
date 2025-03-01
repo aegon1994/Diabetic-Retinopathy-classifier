@@ -6,6 +6,10 @@ I will show an efficienNet model which could extract the features from high reso
 
 ## preparing stage
 In this project, I built this process and train this model in PyTorch framework in local environment.
-If you want to rebuilt this project or implemented this model, I have recommended you to build a Pytorch framework in your computer. The guide of Pytorch is below.
-[How to start the Pytorch](https://pytorch.org/get-started/locally/)
+If you want to rebuilt this project or implemented this model, I have recommended you to build a Pytorch framework in your computer. The guide of Pytorch is here.
+[How to start the Pytorch](https://pytorch.org/get-started/locally/).
+
 ### dataset and labels
+The dataset was provided by [Eric Li](https://www.kaggle.com/taipingeric), the host of this competition.
+
+In this project,
