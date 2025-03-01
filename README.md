@@ -12,4 +12,6 @@ If you want to rebuilt this project or implemented this model, I have recommende
 ### dataset and labels
 The dataset was provided by [Eric Li](https://www.kaggle.com/taipingeric), the host of this competition.
 
-In this project,
+This project was developed in Pytorch, so I didn't need to built labels of datas. In Pytorch, ImageFolder would produce labels according to the order of Sub-folders in the folder which is the location of your datas when it loaded the dataset.
+
+
