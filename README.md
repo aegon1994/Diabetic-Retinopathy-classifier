@@ -42,5 +42,7 @@ In this project, the reason I chose this model to classify our data are:
 
 ## Process
 
-classified images by types manually -> feature engineering one, enhance the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhance contrast ratio of images -> compute weights of unbalanced dataset for computation of loss -> set loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculate mean and std of dataset for data loading -> data loading ->set class for features learning enhancing(in this project, ) -> 
+classified images by types manually -> feature engineering one, enhanced the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhanced contrast ratio of images -> computed weights of unbalanced dataset for computation of loss -> seted loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculated mean and std of dataset for data loading -> data loading ->seted class for features learning enhancing(in this project, I chose mixup and cutmix) -> trained efficientnet model with k-fold -> saved weight of model and predicted the result.
+
+### 
    
