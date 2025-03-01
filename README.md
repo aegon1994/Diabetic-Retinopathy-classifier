@@ -15,4 +15,12 @@ Those datas is the medical images of eyeballs in Diabetic-Retinopathy and there 
 
 This project was developed in Pytorch, so I didn't need to built labels of datas. In Pytorch, ImageFolder would produce labels according to the order of Sub-folders in the folder which is the location of your datas when it loaded the dataset.
 
-Luckily, our type names of dataset is the numbers which order is from 0 to 2 and our datas is not too many, it means I could classify training datas manually
+Luckily, our type names of dataset is the numbers which order is from 0 to 2 and our datas is not too many, it means I could classify training datas manually and produce labels by ImageFolder.
+### model
+I implemented this project by efficienNet, I will introduce this model below.
+
+### Computer hardware
+My CPU is intel-i7-11th, GPU is NVIDIA GeForce RTX 3060, Size of memory is 40GB.
+
+## model 
+
