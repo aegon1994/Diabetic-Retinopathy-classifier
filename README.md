@@ -23,4 +23,4 @@ I implemented this project by efficienNet, I will introduce this model below.
 My CPU is intel-i7-11th, GPU is NVIDIA GeForce RTX 3060, Size of memory is 40GB.
 
 ## model 
-
+In this time, I implemented this project by efficienNet. EfficienNet
