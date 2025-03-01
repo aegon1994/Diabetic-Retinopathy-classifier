@@ -24,3 +24,7 @@ My CPU is intel-i7-11th, GPU is NVIDIA GeForce RTX 3060, Size of memory is 40GB.
 
 ## model 
 In this time, I implemented this project by efficienNet. EfficienNet is a high efficiency CNN model. Here is the architecture of EfficienNet<img src="https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s1600/image2.png">
+
+The feature of efficienNet is it will find the basic CNN network architecture with Neural Architecture Search (NAS) and set Depth, Width and resolution by Compound Scaling at same time.
+That is why EfficientNet outperforms other CNN architectures by achieving higher accuracy while requiring relatively fewer computational resources.
+MBBConv
