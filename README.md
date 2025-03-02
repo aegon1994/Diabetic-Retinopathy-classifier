@@ -64,7 +64,15 @@ To make model learn key features sensitively, I used mixup and cutmix to handle 
 
 Mixup is a kind of photo mix technique, it would combine two photos in specific ratio. for example, I combine a cat photo with a dog photo by 0.5 separately.
 
-Cutmix is the other kind of photo mix technique, it would cut a part of photo and make up this part by same part of anthor photo. for example, there is a photo of cat, I cut the eye part of cat's photo and make it up by anothor cat's eye from different cat photo.
+Cutmix is the other kind of photo mix technique, it would cut a square part of photo and make up this part by random square part of anthor photo. for example, there is a photo of cat, I cut the eye part of cat's photo and make it up by anothor part from different cat photo.
+
+Those two techniques can enforce model learn data by different features or more features instead of one specific feature and they can imporve generalization ability by learning diverse training samples. They also decreate the probability of overfiting.
+
+I want to enhance classifing ability of model by recognizing more key features,so I set mixup and cutmix and made it handle images in training randomly.
+
+### Train and predict process
+I trained model with EfficienNet_B1 and k-fold to avoid overfiting. When I trained my model with EfficienNet_B2 and without k-fold, My model is overfiting very nuch(train_loss : val_loss is about 0.3~0.5: 300~500). I tried EfficienNet_B0 and EfficienNet_B1 with no k-fold, but result wasn't good enough(train_loss : val_loss is about 0.3~0.5: 80:100 and 0.3~0.5: 2:5). After I trained model with EfficienNet_B1 and k-fold, the result is better now(result will show in next section).
+
 
 
    
