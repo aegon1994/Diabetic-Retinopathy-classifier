@@ -62,7 +62,9 @@ I calculated the class weight by compute_class_weight. This way is more convenie
 ### mixup and cutmix
 To make model learn key features sensitively, I used mixup and cutmix to handle images when model was trained. 
 
-Mixup is a kind of photo mix technique, it would cut a part of photo and make up this part by same part of anthor photo. for example, there is a photo of cat, I cut the eye part of cat's photo and make it up by anothor cat's eye from different cat photo.
+Mixup is a kind of photo mix technique, it would combine two photos in specific ratio. for example, I combine a cat photo with a dog photo by 0.5 separately.
 
-Cutmix 
+Cutmix is the other kind of photo mix technique, it would cut a part of photo and make up this part by same part of anthor photo. for example, there is a photo of cat, I cut the eye part of cat's photo and make it up by anothor cat's eye from different cat photo.
+
+
    
