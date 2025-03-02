@@ -97,4 +97,5 @@ In these graph, We could see no matter in accuracy between training stage and va
 The average loss and accuracy in k = 5 are:
 
 The average Train Loss: 0.2483, The average Val Loss: 0.4349
+
 The average Train Acc: 0.7017, The average Val Acc: 0.6045
