@@ -77,6 +77,12 @@ The processing is below:
 Set k = 5 for k-fold -> Create a k-fold iterator with StratifiedKFold in Pytorch framework -> Set ratio between train data and val data -> Set coditions of model -> Set loss function, optimizer and schduler of lr_decay -> Set mixup and cutmix -> trianing(including probability of mixup and cutmix) -> Show training result -> 
  Save model -> Predicted result
 
+Conditions of model:
+weight= EfficientNet_B1_Weights.DEFAULT
+model layer = Dropout(0.35) + linear layer
 
+Dropout kept overfit out, 0.35 of parameter is for balance between avoiding overfitting and accuracy. Linear layer is for classifing. I didn't need to set so many parameter because EfficientNet would find the best CNN architecture by NAS.
+
+optimizer in this model is AdamW, original learning rate is 0.0001, weight_decay is 0.01. 
 
    
