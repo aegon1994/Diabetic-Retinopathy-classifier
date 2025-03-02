@@ -89,5 +89,7 @@ Schduler of learning rate decreating set 0.4 and patience = 2, it means lr decre
 
 ## Results
 ### The result of training
-In training 
+Hrer is fifth fold results below:
+<img src="https://github.com/aegon1994/Diabetic-Retinopathy-classifier/blob/main/image/fifth%20acc.png?raw=true">
+<img src="https://github.com/aegon1994/Diabetic-Retinopathy-classifier/blob/main/image/fifth%20loss.png?raw=true">
    
