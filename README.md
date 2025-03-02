@@ -73,6 +73,7 @@ I want to enhance classifing ability of model by recognizing more key features,s
 ### Train and predict process
 I trained model with EfficienNet_B1 and k-fold to avoid overfiting. When I trained my model with EfficienNet_B2 and without k-fold, My model is overfiting very nuch(train_loss : val_loss is about 0.3-0.5 : 300-500). I tried EfficienNet_B0 and EfficienNet_B1 with no k-fold, but result wasn't good enough(train_loss : val_loss is about 0.3-0.5 : 80-100 and 0.3-0.5 : 2-5). After I trained model with EfficienNet_B1 and k-fold, the result is better now(result will show in next section).
 
-
+The processing is below:
+Set k = 5 for k-fold -> Create a k-fold iterator with StratifiedKFold in Pytorch framework -> Set ratio between train data and val data 
 
    
