@@ -106,4 +106,12 @@ The future works is try those way to handle my dataset to achieve those performa
 
 In conclusion, I decreate the level of overfitting by k-fold and EfficientNet_B1 model, and the loss isn't too bad. The accuracy is not enough to classifing our data, I will try SMOTE my data next time to fix unbalanced dataset and problem of small dataset.
 
-### The result of training
+### The result of prediction
+The result of prediction is call Result.csv. you can download and check it.
+
+## Reference
+The kaggle competition: [Diabetic Retinopathy Classification](https://www.kaggle.com/competitions/retinopathy-classification-sai/team)
+
+Pytorch framework building: [Pytorch offical website](https://pytorch.org/get-started/locally/)
+
+Model introduction: [EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling](https://research.google/blog/efficientnet-improving-accuracy-and-efficiency-through-automl-and-model-scaling/)
