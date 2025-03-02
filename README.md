@@ -100,6 +100,10 @@ The average Train Loss: 0.2483, The average Val Loss: 0.4349
 
 The average Train Acc: 0.7017, The average Val Acc: 0.6045
 
-The loss in training and validation stage is low enough, but they are a little overfitting, but the accuracy is not good enough in medical project like this project. I found the other likely [project](https://github.com/ramanakshay/diabetic-retinopathy-detection/blob/main/README.md) made by ramanakshay, and its accuracy is very good. I  
+The loss in training and validation stage is low enough, but they are a little overfitting, but the accuracy is not good enough in medical project like this project. I found the other likely [project](https://github.com/ramanakshay/diabetic-retinopathy-detection/blob/main/README.md) made by ramanakshay, and its accuracy is very good. I observed he SMOTED his data like creating mirroring datas, fliping datas or ratating datas etc aand he set original learning rate to 0.00005. 
 
-In conclusion, 
+The future works is try those way to handle my dataset to achieve those performance. P.S: I wanted to get my kaggle score in this competition, but I was late obiously. That is why I can not comment the performance of my model. 
+
+In conclusion, I decreate the level of overfitting by k-fold and EfficientNet_B1 model, and the loss isn't too bad. The accuracy is not enough to classifing our data, I will try SMOTE my data next time to fix unbalanced dataset and problem of small dataset.
+
+### The result of training
