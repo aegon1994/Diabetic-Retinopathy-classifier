@@ -60,5 +60,9 @@ In last section I mentioned our numbers of images in all types are 0:1215, 1:560
 I calculated the class weight by compute_class_weight. This way is more convenient and it is suitable for middle level or severe level of unbalanced dataset which is like our dataset. The reasons I set focalloss for loss function are it is suitable middle level or severe level of unbalanced dataset liske our dataset, and it could calculate loss for hard-classified data or unknown standard classified dataset. These reasons matched our datasets, so I set focalloss for loss function.
 
 ### mixup and cutmix
+To make model learn key features sensitively, I used mixup and cutmix to handle images when model was trained. 
 
+Mixup is a kind of photo mix technique, it would cut a part of photo and make up this part by same part of anthor photo. for example, there is a photo of cat, I cut the eye part of cat's photo and make it up by anothor cat's eye from different cat photo.
+
+Cutmix 
    
