@@ -120,4 +120,4 @@ Model introduction: [EfficientNet: Improving Accuracy and Efficiency through Aut
 
 [EfficientNet — 模型放大的新思維](https://spingence.medium.com/efficientnet-%E6%A8%A1%E5%9E%8B%E6%94%BE%E5%A4%A7%E7%9A%84%E6%96%B0%E6%80%9D%E7%B6%AD-bef2062ff070)
 
-mixup and cutmix summary: 
+mixup and cutmix summary: [【论文阅读笔记】CutMix：数据增强](https://blog.csdn.net/weixin_38715903/article/details/103999227)
