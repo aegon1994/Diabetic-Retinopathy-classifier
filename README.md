@@ -52,8 +52,9 @@ Actually I don't know standard for dataset classifing in this competition, but w
 
 My idea is enhance those areas, it would make model recognize images of different types easily. To enhance red and brown areas, the saturation of red and brown in HSV channel was raised 60%(or to 255 if saturation was over the maximum which is 255).
 
-To enhance white and black areas, I enhanced contrast ratio of images, it made those part more clear. Contrast ratio of images enhancing raised noise of images, so I blurred images with bilateralFilter in OpenCV. it could make some parts blur and keep clear between parts at same time.
+To enhance white and black areas, I enhanced contrast ratio of images, it made those part more clear. Contrast ratio of images enhancing raised noise of images, so I blurred images with bilateralFilter in OpenCV. It could make some parts blur and keep clear between parts at same time.
 
-
+### unbalanced dataset
+In last section I mentioned our numbers of images in all types are 0:1215, 1:560, 2:311. it is middle level or severe level of unbalanced dataset. 
 
    
