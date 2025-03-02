@@ -92,4 +92,9 @@ Schduler of learning rate decreating set 0.4 and patience = 2, it means lr decre
 Hrer is fifth fold results below:
 <img src="https://github.com/aegon1994/Diabetic-Retinopathy-classifier/blob/main/image/fifth%20acc.png?raw=true">
 <img src="https://github.com/aegon1994/Diabetic-Retinopathy-classifier/blob/main/image/fifth%20loss.png?raw=true">
-   
+In these graph, We could see no matter in accuracy between training stage and val stage or in loss between training stage and val stage, these results is a little overfitting, but it is not severe. 
+
+The average loss and accuracy in k = 5 are:
+
+The average Train Loss: 0.2483, The average Val Loss: 0.4349
+The average Train Acc: 0.7017, The average Val Acc: 0.6045
