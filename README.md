@@ -115,3 +115,9 @@ The kaggle competition: [Diabetic Retinopathy Classification](https://www.kaggle
 Pytorch framework building: [Pytorch offical website](https://pytorch.org/get-started/locally/)
 
 Model introduction: [EfficientNet: Improving Accuracy and Efficiency through AutoML and Model Scaling](https://research.google/blog/efficientnet-improving-accuracy-and-efficiency-through-automl-and-model-scaling/)
+
+[EfficientNetB0 architecture — Block 2](https://medium.com/image-processing-with-python/efficientnetb0-architecture-block-2-b00cc690e891)
+
+[EfficientNet — 模型放大的新思維](https://spingence.medium.com/efficientnet-%E6%A8%A1%E5%9E%8B%E6%94%BE%E5%A4%A7%E7%9A%84%E6%96%B0%E6%80%9D%E7%B6%AD-bef2062ff070)
+
+mixup and cutmix summary: 
