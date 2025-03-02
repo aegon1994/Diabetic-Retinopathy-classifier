@@ -42,7 +42,7 @@ In this project, the reason I chose this model to classify our data are:
 
 ## Process
 
-classified images by types manually -> feature engineering one, enhanced the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhanced contrast ratio of images -> computed weights of unbalanced dataset for computation of loss -> seted loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculated mean and std of dataset for data loading -> data loading ->seted class for features learning enhancing(in this project, I chose mixup and cutmix) -> trained efficientnet model with k-fold -> saved weight of model and predicted the result.
+classified images by types manually -> feature engineering one, enhanced the saturation in HSV of specific color(in this project, is red and brown) ->  feature engineering two, enhanced contrast ratio of images -> computed weights of unbalanced dataset for computation of loss -> seted loss function(for unbalanced dataset, I calculate loss with focalloss) -> calculated mean and std of dataset for data loading -> data loading ->set class for features learning enhancing(in this project, I chose mixup and cutmix) -> trained efficientnet model with k-fold -> saved weight of model and predicted the result.
 
 ### data labeling
 In this project, there are three types called 0,1,2. I introduced Pytorch could label datas auto by address when it loaded datas. The only thing I needed to do was classify training data to correct subfolder. I classified data manually because data is not too many.
@@ -55,6 +55,10 @@ My idea is enhance those areas, it would make model recognize images of differen
 To enhance white and black areas, I enhanced contrast ratio of images, it made those part more clear. Contrast ratio of images enhancing raised noise of images, so I blurred images with bilateralFilter in OpenCV. It could make some parts blur and keep clear between parts at same time.
 
 ### unbalanced dataset
-In last section I mentioned our numbers of images in all types are 0:1215, 1:560, 2:311. it is middle level or severe level of unbalanced dataset. 
+In last section I mentioned our numbers of images in all types are 0:1215, 1:560, 2:311. It is middle level or severe level of unbalanced dataset. It would influenced our result of models. To solve this problem, I have to calculate the class weight for loss function and chose the right loss funstion which could avoid affect of unbalanced dataset.
+
+I calculated the class weight by compute_class_weight. This way is more convenient and it is suitable for middle level or severe level of unbalanced dataset which is like our dataset. The reasons I set focalloss for loss function are it is suitable middle level or severe level of unbalanced dataset liske our dataset, and it could calculate loss for hard-classified data or unknown standard classified dataset. These reasons matched our datasets, so I set focalloss for loss function.
+
+### mixup and cutmix
 
    
