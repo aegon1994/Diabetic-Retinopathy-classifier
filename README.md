@@ -32,7 +32,7 @@ In the graph, we could see the main stem of the architecture of EfficienNet is d
 
 SE block is a sophisticated mechanism designed to enhance the network’s ability to focus on the most informative features in the feature maps. This process significantly improves the representational power of the model
 
-In this project, the reason I chose this model to classify our data are:
+In this project, the reasons I chose this model to classify our data are:
 
 1. I implemented this project on my laptop, My computational resources is limited. EfficienNet could achieve better performance in limited computational environment.
 
