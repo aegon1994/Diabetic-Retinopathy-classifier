@@ -83,6 +83,11 @@ model layer = Dropout(0.35) + linear layer
 
 Dropout kept overfit out, 0.35 of parameter is for balance between avoiding overfitting and accuracy. Linear layer is for classifing. I didn't need to set so many parameter because EfficientNet would find the best CNN architecture by NAS.
 
-optimizer in this model is AdamW, original learning rate is 0.0001, weight_decay is 0.01. 
+Optimizer in this model is AdamW, original learning rate is 0.0001, weight_decay is 0.01. The performance of AdamW in classifing task is steady and it suitable for small dataset.
 
+Schduler of learning rate decreating set 0.4 and patience = 2, it means lr decreates to 0.4% in every 2 epoch.
+
+## Results
+### The result of training
+In training 
    
