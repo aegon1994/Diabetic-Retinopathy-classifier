@@ -99,3 +99,7 @@ The average loss and accuracy in k = 5 are:
 The average Train Loss: 0.2483, The average Val Loss: 0.4349
 
 The average Train Acc: 0.7017, The average Val Acc: 0.6045
+
+The loss in training and validation stage is low enough, but they are a little overfitting, but the accuracy is not good enough in medical project like this project. I found the other likely [project](https://github.com/ramanakshay/diabetic-retinopathy-detection/blob/main/README.md) made by ramanakshay, and its accuracy is very good. I  
+
+In conclusion, 
