@@ -2,7 +2,7 @@
 This is a classifier which could classify eyeballs which are in Diabetic-Retinopathy into three different types. This project refer to the competition in [Diabetic Retinopathy Classification](https://www.kaggle.com/competitions/retinopathy-classification-sai/team).
 <img src="https://github.com/aegon1994/Diabetic-Retinopathy-classifier/blob/main/image/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-03-01%20154415.png?raw=true">
 
-I will show an efficienNet model which could extract the features from high resolution medical images and classified medical images by those features.
+I will show an efficientNet model which could extract the features from high resolution medical images and classified medical images by those features.
 
 ## preparing stage
 In this project, I built this process and train this model in PyTorch framework in local environment.
@@ -17,18 +17,18 @@ This project was developed in Pytorch, so I didn't need to built labels of datas
 
 Luckily, our type names of dataset is the numbers which order is from 0 to 2 and our datas is not too many, it means I could classify training datas manually and produce labels by ImageFolder.
 ### model
-I implemented this project by efficienNet, I will introduce this model below.
+I implemented this project by efficientNet, I will introduce this model below.
 
 ### Computer hardware
 My CPU is intel-i7-11th, GPU is NVIDIA GeForce RTX 3060, Size of memory is 40GB.
 
 ## model 
-In this time, I implemented this project by efficienNet. EfficienNet is a high efficiency CNN model. Here is the architecture of EfficienNet<img src="https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s1600/image2.png">
+In this time, I implemented this project by efficientNet. EfficientNet is a high efficiency CNN model. Here is the architecture of EfficientNet<img src="https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s1600/image2.png">
 
-The feature of efficienNet is it will find the basic CNN network architecture with Neural Architecture Search (NAS) and set Depth, Width and resolution by Compound Scaling at same time.
+The feature of efficientNet is it will find the basic CNN network architecture with Neural Architecture Search (NAS) and set Depth, Width and resolution by Compound Scaling at same time.
 That is why EfficientNet outperforms other CNN architectures by achieving higher accuracy while requiring relatively fewer computational resources.
 
-In the graph, we could see the main stem of the architecture of EfficienNet is different size MBConv layers. MBConv including depthwise separable convolution and an SE (Squeeze-and-Excitation) block could help to extract features in key area. Depthwise separable convolution in MBConv could capture local detail features, it is more efficient than other CNNs in computational environment.
+In the graph, we could see the main stem of the architecture of EfficientNet is different size MBConv layers. MBConv including depthwise separable convolution and an SE (Squeeze-and-Excitation) block could help to extract features in key area. Depthwise separable convolution in MBConv could capture local detail features, it is more efficient than other CNNs in computational environment.
 
 SE block is a sophisticated mechanism designed to enhance the network’s ability to focus on the most informative features in the feature maps. This process significantly improves the representational power of the model
 
@@ -71,7 +71,7 @@ Those two techniques can enforce model learn data by different features or more 
 I want to enhance classifing ability of model by recognizing more key features,so I set mixup and cutmix and made it handle images in training randomly.
 
 ### Train and predict process
-I trained model with EfficienNet_B1 and k-fold to avoid overfiting. When I trained my model with EfficienNet_B2 and without k-fold, My model is overfiting very nuch(train_loss : val_loss is about 0.3-0.5 : 300-500). I tried EfficienNet_B0 and EfficienNet_B1 with no k-fold, but result wasn't good enough(train_loss : val_loss is about 0.3-0.5 : 80-100 and 0.3-0.5 : 2-5). After I trained model with EfficienNet_B1 and k-fold, the result is better now(result will show in next section).
+I trained model with EfficientNet_B1 and k-fold to avoid overfiting. When I trained my model with EfficientNet_B2 and without k-fold, My model is overfiting very much(train_loss : val_loss is about 0.3-0.5 : 300-500). I tried EfficientNet_B0 and EfficientNet_B1 with no k-fold, but result wasn't good enough(train_loss : val_loss is about 0.3-0.5 : 80-100 and 0.3-0.5 : 2-5). After I trained model with EfficientNet_B1 and k-fold, the result is better now(result will show in next section).
 
 The processing is below:
 Set k = 5 for k-fold -> Create a k-fold iterator with StratifiedKFold in Pytorch framework -> Set ratio between train data and val data -> Set coditions of model -> Set loss function, optimizer and schduler of lr_decay -> Set mixup and cutmix -> trianing(including probability of mixup and cutmix) -> Show training result -> 
