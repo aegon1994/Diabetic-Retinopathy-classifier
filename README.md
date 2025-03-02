@@ -48,6 +48,12 @@ classified images by types manually -> feature engineering one, enhanced the sat
 In this project, there are three types called 0,1,2. I introduced Pytorch could label datas auto by address when it loaded datas. The only thing I needed to do was classify training data to correct subfolder. I classified data manually because data is not too many.
 
 ### feature engineering
+Actually I don't know standard for dataset classifing in this competition, but we do know how to classify types of eyeballs which are in Diabetic-Retinopathy in clinical. The most important clinical manifestations for classifing eyeballs which are in Diabetic-Retinopathy are microaneurysms, hard exudates, cotton-wool spots, macular edema, neovascularization, and vitreous hemorrhage etc. The key features are the red and brown areas expand innormally or there are some unusual yelow, white or black areas in eyeballs. 
+
+My idea is enhance those areas, it would make model recognize images of different types easily. To enhance red and brown areas, the saturation of red and brown in HSV channel was raised 60%(or to 255 if saturation was over the maximum which is 255).
+
+To enhance white and black areas, I enhanced contrast ratio of images, it made those part more clear. Contrast ratio of images enhancing raised noise of images, so I blurred images with bilateralFilter in OpenCV. it could make some parts blur and keep clear between parts at same time.
+
 
 
    
